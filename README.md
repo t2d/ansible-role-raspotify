@@ -10,7 +10,7 @@ Example Playbook
       roles:
          - { role: t2d.raspotify, tags: raspotify }
 
-See [https://github.com/t2d/ansible-raspberrypi/] for further integration.
+See https://github.com/t2d/ansible-raspberrypi for further integration.
 
 License
 -------
