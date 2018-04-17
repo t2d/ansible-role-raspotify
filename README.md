@@ -1,7 +1,7 @@
-Role Name
-=========
+ansible-role-raspotify
+======================
 
-Install [raspotify](https://github.com/dtcooper/raspotify) on raspbian.
+Install [Raspotify](https://github.com/dtcooper/raspotify) on [Raspbian](https://www.raspbian.org/).
 
 Example Playbook
 ----------------
@@ -9,6 +9,8 @@ Example Playbook
     - hosts: pi
       roles:
          - { role: t2d.raspotify, tags: raspotify }
+
+See [https://github.com/t2d/ansible-raspberrypi/] for further integration.
 
 License
 -------
