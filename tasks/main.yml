@@ -1,0 +1,21 @@
+---
+# tasks file for ansible-role-raspotify
+
+- name: Ensure apt-transport-https is installed
+  apt:
+    name: apt-transport-https
+    state: present
+
+- name: Ensure apt key is present
+  apt_key:
+    url: https://dtcooper.github.io/raspotify/key.asc
+    state: present
+
+- name: Ensure apt repo is present
+  apt_repository:
+    repo: deb https://dtcooper.github.io/raspotify jessie main
+    state: present
+
+- name: Install raspotify
+  apt:
+    name: raspotify
