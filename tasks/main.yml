@@ -13,7 +13,7 @@
 
 - name: Ensure apt repo is present
   apt_repository:
-    repo: deb https://dtcooper.github.io/raspotify jessie main
+    repo: deb https://dtcooper.github.io/raspotify raspotify main
     state: present
 
 - name: Install raspotify
